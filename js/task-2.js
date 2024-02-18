@@ -20,7 +20,7 @@ class Storage {
   }
 
   addItem(newItem) {
-    return this.#items.push(newItem);
+    this.#items.push(newItem);
   }
   removeItem(itemToRemove) {
     const idx = this.#items.indexOf(itemToRemove);
