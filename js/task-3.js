@@ -12,23 +12,17 @@ class StringBuilder {
   constructor(initialValue = '') {
     this.#value = initialValue;
   }
-  //getValue() — повертає поточне значення приватної властивості value.
   getValue() {
     return this.#value;
   }
-  //padEnd(str) — отримує параметр str (рядок) і додає його в кінець значення приватної властивості value об'єкта, який викликає цей метод.
 
   padEnd(str) {
     return (this.#value = this.#value + str);
   }
 
-  //padStart(str) — отримує параметр str (рядок) і додає його на початок значення приватної властивості value об'єкта, який викликає цей метод.
-
   padStart(str) {
     return (this.#value = str + this.#value);
   }
-
-  //padBoth(str) — отримує параметр str (рядок) і додає його на початок і в кінець значення приватної властивості value об'єкта, який викликає цей метод.
 
   padBoth(str) {
     return (this.#value = str + this.#value + str);
